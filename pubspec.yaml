@@ -1,0 +1,118 @@
+name: flutter_application_3
+description: "A new Flutter project."
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number is used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'  # Compatible with latest stable Flutter & Dart 3.4+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.3.1
+  firebase_database: ^11.3.10
+  firebase_storage: ^12.3.0
+  cloud_firestore: ^5.0.0
+
+  # UI & Media
+  image_picker: ^1.1.2
+  camera: ^0.11.0
+  carousel_slider: ^4.2.1
+  qr_flutter: ^4.1.0
+
+  # Maps & Location
+  google_maps_flutter: ^2.7.0
+  flutter_polyline_points: ^2.1.0
+  location: ^6.0.2
+  geocoding: ^3.0.0
+  geolocator: ^11.1.0
+
+  # Sharing & Utilities
+  share_plus: ^7.2.2
+  url_launcher: ^6.2.0
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.2.2
+
+  # Networking & Data
+  http: ^1.2.2
+  csv: ^5.0.0
+
+  # Speech & Voice
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.0.2
+
+  # ML & Recognition
+  google_mlkit_face_detection: ^0.11.0
+  google_mlkit_digital_ink_recognition: ^0.11.0
+  tflite_flutter: ^0.11.0
+
+  # Image Processing
+  image: ^4.2.0
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^3.0.0
+
+# Flutter specific configuration
+flutter:
+  generate: true
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/login_bg.jpeg
+    - assets/logo.png
+    - assets/otp_logo.png
+    - assets/otp_background.jpg
+    - assets/truck_icon.png
+    - assets/bg.jpg
+    - assets/Driver_List_Attendance.csv
+    - assets/login.png
+    - assets/otp.png
+    - assets/main_app.png
+    - assets/language_selection.png
+
+  # Example for custom fonts (uncomment and configure if needed)
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
